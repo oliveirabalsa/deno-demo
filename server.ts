@@ -11,22 +11,6 @@ import {
   deleteUser,
 } from "./controllers/Users/index.ts";
 
-import {
-  getOrders,
-  createOrders,
-  deleteOrders,
-  updateOrders,
-  getOrder,
-} from "./controllers/Orders/index.ts";
-
-import {
-  create,
-  getAll,
-  getById,
-  update,
-  remove,
-} from "./controllers/stores/storeController.ts";
-
 const app = new Application();
 app.post("/login", loginUser);
 
@@ -38,17 +22,7 @@ app
   .post("/newUser", createUser)
   .get("/user/:id", getUser)
   .put("/user/:id", updateUser)
-  .delete("/user/:id", deleteUser)
-  .get("/orders", getOrders)
-  .post("/newOrder", createOrders)
-  .delete("/order/:id", deleteOrders)
-  .put("/order/:id", updateOrders)
-  .get("/order", getOrder)
-  .post("stores", create)
-  .get("/stores", getAll)
-  .get("/stores/:id", getById)
-  .put("stores/:id", update)
-  .delete("stores/:id", remove)
+  .delete("/user/:id", deleteUser) 
   .start({ port: 4000 });
 
 console.log(`server listening on http://localhost:4000`);
