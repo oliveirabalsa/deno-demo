@@ -10,9 +10,9 @@ Modules use:
 
 [mongo](https://deno.land/x/mongo)
 
-[bcrypt]: https://deno.land/x/bcrypt
+[bcrypt]:(https://deno.land/x/bcrypt)
 
-[djwt]: https://deno.land/x/djwt
+[djwt]:(https://deno.land/x/djwt)
 
 
 ## Endpoint Router
