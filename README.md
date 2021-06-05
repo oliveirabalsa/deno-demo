@@ -2,7 +2,6 @@
 
 _Crud system with Deno application_
 
-
 Modules use:
 
 [abc](https://deno.land/x/abc)
